@@ -1,0 +1,274 @@
+
+> bloodbank@0.0.1 start
+> react-native start --reset-cache
+
+
+Welcome to React Native v0.86
+Starting dev server on http://localhost:8081
+
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+ WARN  the transform cache was reset.
+                Welcome to Metro v0.84.4
+              Fast - Scalable - Integrated
+
+
+ INFO  Dev server ready. Press Ctrl+C to exit.
+ INFO  Key commands available:
+
+   r  - reload app(s)
+   d  - open Dev Menu
+   j  - open DevTools
+
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js ▓▓▓░░░░░░░░░░░░░ 21% (7/116)
+ BUNDLE  ./index.js ▓▓▓░░░░░░░░░░░░░ 21% (40/202)
+ BUNDLE  ./index.js ▓▓▓░░░░░░░░░░░░░ 21% (93/260)
+ BUNDLE  ./index.js ▓▓▓░░░░░░░░░░░░░ 24% (174/360)
+ BUNDLE  ./index.js ▓▓▓▓▓░░░░░░░░░░░ 31% (269/476)
+ BUNDLE  ./index.js ▓▓▓▓▓▓░░░░░░░░░░ 39% (378/632)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓░░░░░░░ 60% (526/674)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 77% (652/743)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░ 93% (773/801)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 98% (831/868)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99% (920/921)
+ BUNDLE  ./index.js 
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  Error: Unable to resolve module ../../assets/Banner1.png from D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: 
+
+None of these files exist:
+  * Banner1.png
+  * src\assets\Banner1.png
+  41 |   notification: require('../../assets/notification.png'),
+  42 |
+> 43 |   banner: require('../../assets/Banner1.png'),
+     |                    ^
+  44 |
+  45 |   donateBlood: require('../../assets/blood-donation.png'),
+  46 |
+    at ModuleResolver.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:143:15)
+    at DependencyGraph.resolveDependency (D:\React Native\BloodBank\node_modules\metro\src\node-haste\DependencyGraph.js:263:43)
+    at D:\React Native\BloodBank\node_modules\metro\src\lib\transformHelpers.js:165:21
+    at resolveDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:43:25)
+    at visit (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\buildSubgraph.js:105:3)
+    at async Graph._buildDelta (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:163:22)
+    at async Graph.traverseDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 

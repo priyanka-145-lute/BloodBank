@@ -16,6 +16,8 @@ import {
 } from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
+import {useAuth} from '../../context/AuthContext';
+
 export type AuthStackParamList = {
   Login: undefined;
   OtpVerification: {
@@ -33,6 +35,7 @@ const OTP_LENGTH = 4;
 const OtpVerificationScreen = ({
   route,
 }: OtpVerificationScreenProps) => {
+  const {signIn} = useAuth();
   const {mobileNumber} = route.params;
 
   const [otp, setOtp] = useState<string[]>(
@@ -104,19 +107,7 @@ const OtpVerificationScreen = ({
     console.log('Mobile Number:', mobileNumber);
     console.log('Entered OTP:', enteredOtp);
 
-    Alert.alert(
-      'Success',
-      'OTP verified successfully.',
-      [
-        {
-          text: 'OK',
-          onPress: () => {
-            // Navigate after successful OTP verification.
-            // navigation.replace('Home');
-          },
-        },
-      ],
-    );
+    signIn();
   };
 
   const handleResendCode = (): void => {
@@ -380,3 +371,5 @@ otpImage: {
     fontWeight: '500',
   },
 });
+
+
