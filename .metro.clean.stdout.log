@@ -272,3 +272,128 @@ None of these files exist:
     at async DeltaCalculator._getChangedDependencies (D:\React Native\BloodBank\node_modules\metro\src\DeltaBundler\DeltaCalculator.js:200:42)
  BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
  BUNDLE  ./index.js 
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\navigation\TabNavigator.tsx: Unexpected token (137:22)
+
+  135 |   
+  136 |   },
+> 137 |   centerIcon: {width: , height: 45},
+      |                       ^
+  138 | });
+  139 |
+  140 | export default TabNavigator;
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\navigation\TabNavigator.tsx: Unexpected token (137:22)
+
+  135 |   
+  136 |   },
+> 137 |   centerIcon: {width: , height: 45},
+      |                       ^
+  138 | });
+  139 |
+  140 | export default TabNavigator;
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\navigation\TabNavigator.tsx: Unexpected token (137:22)
+
+  135 |   
+  136 |   },
+> 137 |   centerIcon: {width: , height: 45},
+      |                       ^
+  138 | });
+  139 |
+  140 | export default TabNavigator;
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (110:54)
+
+  108 |   const bannerStep = width;
+  109 |   const requirementViewportWidth = width - 14;
+> 110 |   const requirementWidth = requirementViewportWidth - ;
+      |                                                       ^
+  111 |   const bannerRef = useRef<FlatList<Banner>>(null);
+  112 |   const requirementRef = useRef<FlatList<UrgentRequirement>>(null);
+  113 |   const bannerIndexRef = useRef(0);
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (318:30)
+
+  316 |   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
+  317 |   menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
+> 318 |   notificationButton: {width: , height: 44, borderRadius: 50, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center'},
+      |                               ^
+  319 |   notificationImage: {width: 34, height: 34},
+  320 |   scrollContent: {paddingBottom: 24},
+  321 |   bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (318:42)
+
+  316 |   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
+  317 |   menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
+> 318 |   notificationButton: {width: 34, height: , borderRadius: 50, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center'},
+      |                                           ^
+  319 |   notificationImage: {width: 34, height: 34},
+  320 |   scrollContent: {paddingBottom: 24},
+  321 |   bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (318:60)
+
+  316 |   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
+  317 |   menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
+> 318 |   notificationButton: {width: 34, height: 34, borderRadius: , backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center'},
+      |                                                             ^
+  319 |   notificationImage: {width: 34, height: 34},
+  320 |   scrollContent: {paddingBottom: 24},
+  321 |   bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (318:64)
+
+  316 |   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
+  317 |   menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
+> 318 |   notificationButton: {width: 34, height: 34, borderRadius: 17, , alignItems: 'center', justifyContent: 'center'},
+      |                                                                 ^
+  319 |   notificationImage: {width: 34, height: 34},
+  320 |   scrollContent: {paddingBottom: 24},
+  321 |   bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (326:39)
+
+  324 |   bannerImage: {width: '100%', height: '100%'},
+  325 |   primaryActionsRow: {flexDirection: 'row', marginHorizontal: 12, marginTop: 12, columnGap: 12},
+> 326 |   primaryActionCard: {flex: 1, height: , backgroundColor: LIGHT_RED, borderWidth: 1, borderColor: BORDER_COLOR, borderRadius: 9, alignItems: 'center', justifyContent: 'center'},
+      |                                        ^
+  327 |   primaryActionImage: {width: 43, height: 43},
+  328 |   primaryActionText: {color: '#292929', fontSize: 12, fontWeight: '500', marginTop: 1},
+  329 |   sectionCard: {backgroundColor: '#F8F8F8', marginHorizontal: 12, marginTop: 12, borderRadius: 4, borderWidth: 1, borderColor: '#E5E5E5', paddingTop: 12, paddingBottom: 14, overflow: 'hidden'},
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Legacy octal literals are not allowed in strict mode. (335:31)
+
+  333 |   requirementListContent: {paddingHorizontal: 5,},
+  334 |   requirementSeparator: {width: 10},
+> 335 |   requirementCard: {minHeight: 05, paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
+      |                                ^
+  336 |   requirementTopRow: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
+  337 |   patientName: {flex: 1, color: '#3A3A3A', fontSize: 12, fontWeight: '600', marginRight: 8},
+  338 |   bloodGroupBadge: {minWidth: 27, height: 22, paddingHorizontal: 6, backgroundColor: '#F90020', borderRadius: 5, alignItems: 'center', justifyContent: 'center'},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token, expected "," (335:39)
+
+  333 |   requirementListContent: {paddingHorizontal: 5,},
+  334 |   requirementSeparator: {width: 10},
+> 335 |   requirementCard: {minHeight: 105,min paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
+      |                                        ^
+  336 |   requirementTopRow: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
+  337 |   patientName: {flex: 1, color: '#3A3A3A', fontSize: 12, fontWeight: '600', marginRight: 8},
+  338 |   bloodGroupBadge: {minWidth: 27, height: 22, paddingHorizontal: 6, backgroundColor: '#F90020', borderRadius: 5, alignItems: 'center', justifyContent: 'center'},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token, expected "," (335:44)
+
+  333 |   requirementListContent: {paddingHorizontal: 5,},
+  334 |   requirementSeparator: {width: 10},
+> 335 |   requirementCard: {minHeight: 105,minWidth paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
+      |                                             ^
+  336 |   requirementTopRow: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
+  337 |   patientName: {flex: 1, color: '#3A3A3A', fontSize: 12, fontWeight: '600', marginRight: 8},
+  338 |   bloodGroupBadge: {minWidth: 27, height: 22, paddingHorizontal: 6, backgroundColor: '#F90020', borderRadius: 5, alignItems: 'center', justifyContent: 'center'},
+ ERROR  SyntaxError: D:\React Native\BloodBank\src\screens\tab\HomeScreen.tsx: Unexpected token (335:45)
+
+  333 |   requirementListContent: {paddingHorizontal: 5,},
+  334 |   requirementSeparator: {width: 10},
+> 335 |   requirementCard: {minHeight: 105,minWidth: , paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
+      |                                              ^
+  336 |   requirementTopRow: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
+  337 |   patientName: {flex: 1, color: '#3A3A3A', fontSize: 12, fontWeight: '600', marginRight: 8},
+  338 |   bloodGroupBadge: {minWidth: 27, height: 22, paddingHorizontal: 6, backgroundColor: '#F90020', borderRadius: 5, alignItems: 'center', justifyContent: 'center'},

@@ -126,20 +126,17 @@ const styles = StyleSheet.create({
   centerSlot: {width: 65, alignItems: 'center'},
   centerButton: {
     position: 'absolute',
-    top: -25,
-    width: 62,
-    height: 62,
+    top: -33,
+    width: 82,
+    height: 82,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 31,
-    backgroundColor: 'transparent',
+    
+  
   },
-  centerIcon: {width: 56, height: 56},
+  centerIcon: {width: 65, height: 66},
 });
 
 export default TabNavigator;
-
-
-
 
 

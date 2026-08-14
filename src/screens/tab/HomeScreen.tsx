@@ -104,10 +104,10 @@ const EmergencyItem = ({title, image, onPress}: EmergencyItemProps) => (
 
 const HomeScreen = ({navigation}: HomeScreenProps) => {
   const {width} = useWindowDimensions();
-  const bannerWidth = width - 14;
+  const bannerWidth = width - 24;
   const bannerStep = width;
-  const requirementViewportWidth = width - 38;
-  const requirementWidth = requirementViewportWidth - 10;
+  const requirementViewportWidth = width - 14;
+  const requirementWidth = requirementViewportWidth - 36;
   const bannerRef = useRef<FlatList<Banner>>(null);
   const requirementRef = useRef<FlatList<UrgentRequirement>>(null);
   const bannerIndexRef = useRef(0);
@@ -311,28 +311,28 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
   safeArea: {flex: 1, backgroundColor: RED},
-  mainContainer: {flex: 1, backgroundColor: '#F8F8F8'},
-  header: {height: 52, backgroundColor: RED, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 7},
+  mainContainer: {flex: 1, backgroundColor: '#ffffff'},
+  header: {height: 52, backgroundColor: RED, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 12},
   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
-  menuImage: {width: 35, height: 35},
-  notificationButton: {width: 44, height: 44, borderRadius: 22, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center'},
+  menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
+  notificationButton: {width: 34, height: 34, borderRadius: 17,  alignItems: 'center', justifyContent: 'center'},
   notificationImage: {width: 34, height: 34},
   scrollContent: {paddingBottom: 24},
-  bannerListContent: {paddingHorizontal: 7, paddingTop: 12},
-  bannerSeparator: {width: 14},
-  bannerContainer: {height: 175, backgroundColor: '#FFFFFF', borderRadius: 9, overflow: 'hidden', borderWidth: 1, borderColor: '#E04A5F'},
+  bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
+  bannerSeparator: {width: 24},
+  bannerContainer: {height: 170, backgroundColor: '#FFFFFF', borderRadius: 9, overflow: 'hidden', borderWidth: 1, borderColor: '#E04A5F'},
   bannerImage: {width: '100%', height: '100%'},
-  primaryActionsRow: {flexDirection: 'row', marginHorizontal: 7, marginTop: 12, columnGap: 12},
-  primaryActionCard: {flex: 1, height: 78, backgroundColor: LIGHT_RED, borderWidth: 1, borderColor: BORDER_COLOR, borderRadius: 9, alignItems: 'center', justifyContent: 'center'},
-  primaryActionImage: {width: 43, height: 43},
+  primaryActionsRow: {flexDirection: 'row', marginHorizontal: 12, marginTop: 12, columnGap: 12},
+  primaryActionCard: {flex: 1, height: 95, backgroundColor: LIGHT_RED, borderWidth: 1, borderColor: BORDER_COLOR, borderRadius: 9, alignItems: 'center', justifyContent: 'center'},
+  primaryActionImage: {width: 43, height: 43,backgroundColor: '#FFFFFF', borderRadius: 21, padding: 6},
   primaryActionText: {color: '#292929', fontSize: 12, fontWeight: '500', marginTop: 1},
-  sectionCard: {backgroundColor: '#FFFFFF', marginHorizontal: 7, marginTop: 12, borderRadius: 4, borderWidth: 1, borderColor: '#E5E5E5', paddingTop: 10, paddingBottom: 11, overflow: 'hidden'},
-  sectionHeader: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, paddingHorizontal: 12},
+  sectionCard: {backgroundColor: '#F8F8F8', marginHorizontal: 12, marginTop: 12, borderRadius: 4, borderWidth: 1, borderColor: '#E5E5E5', paddingTop: 12, paddingBottom: 14, overflow: 'hidden'},
+  sectionHeader: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, paddingHorizontal: 12},
   sectionTitle: {color: '#171717', fontSize: 14, fontWeight: '500'},
   viewAllText: {color: RED, fontSize: 12},
-  requirementListContent: {paddingHorizontal: 5},
+  requirementListContent: {paddingHorizontal: 15,},
   requirementSeparator: {width: 10},
-  requirementCard: {minHeight: 88, paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
+  requirementCard: {minHeight: 105, paddingHorizontal: 7, paddingTop: 7, paddingBottom: 6, backgroundColor: '#FFF7F9', borderWidth: 1, borderColor: '#F2B6C3', borderRadius: 8},
   requirementTopRow: {flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'},
   patientName: {flex: 1, color: '#3A3A3A', fontSize: 12, fontWeight: '600', marginRight: 8},
   bloodGroupBadge: {minWidth: 27, height: 22, paddingHorizontal: 6, backgroundColor: '#F90020', borderRadius: 5, alignItems: 'center', justifyContent: 'center'},
@@ -344,11 +344,15 @@ const styles = StyleSheet.create({
   locationRow: {flexDirection: 'row', alignItems: 'center', marginTop: 5},
   locationMarker: {width: 14, color: RED, fontSize: 13, textAlign: 'center'},
   locationText: {flex: 1, color: '#555555', fontSize: 10.5, marginLeft: 3},
-  emergencySection: {backgroundColor: '#FFFFFF', marginHorizontal: 7, marginTop: 12, borderRadius: 4, borderWidth: 1, borderColor: '#E5E5E5', paddingHorizontal: 11, paddingTop: 12, paddingBottom: 14},
-  emergencySectionTitle: {color: '#171717', fontSize: 14, fontWeight: '500', textAlign: 'center', marginBottom: 11},
-  emergencyGrid: {flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: 12},
-  emergencyItem: {width: '31.6%', height: 76, backgroundColor: '#FFF9FA', borderWidth: 1, borderColor: RED, borderRadius: 4, alignItems: 'center', justifyContent: 'center'},
+  emergencySection: {backgroundColor: '#FFFFFF', marginHorizontal: 12, marginTop: 12, borderRadius: 4, borderWidth: 1, borderColor: '#E5E5E5', paddingHorizontal: 12, paddingTop: 14, paddingBottom: 18},
+  emergencySectionTitle: {color: '#171717', fontSize: 14, fontWeight: '500', textAlign: 'center', marginBottom: 14},
+  emergencyGrid: {flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: 14},
+  emergencyItem: {width: '31%', height: 88, backgroundColor: '#FFF9FA', borderWidth: 1, borderColor: RED, borderRadius: 4, alignItems: 'center', justifyContent: 'center'},
   emergencyIconContainer: {height: 45, alignItems: 'center', justifyContent: 'center'},
   emergencyIcon: {width: 42, height: 42},
   emergencyItemText: {width: '100%', color: '#242424', fontSize: 10.5, textAlign: 'center', paddingHorizontal: 2, marginTop: 1},
 });
+
+
+
+
