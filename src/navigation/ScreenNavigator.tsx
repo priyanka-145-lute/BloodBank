@@ -4,6 +4,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TabNavigator from './TabNavigator';
 
 import NotificationScreen from '../screens/details/NotificationScreen';
+import ActivityDetailsScreen from '../screens/details/ActivityDetailsScreen';
+import BloodDonateScreen from '../screens/details/BloodDonateScreen';
+import BloodDonateDetailsScreen from '../screens/details/BloodDonateDetailsScreen';
+import RequestBloodScreen from '../screens/details/RequestBloodScreen';
+import RequestDetailsScreen from '../screens/details/RequestDetailsScreen';
 // import DonorDetailsScreen from '../screens/details/DonorDetailsScreen';
 // import EditProfileScreen from '../screens/details/EditProfileScreen';
 
@@ -34,6 +39,36 @@ const ScreenNavigator = () => {
         }}
       />
 
+
+
+      <Stack.Screen
+        name="DonateBlood"
+        component={BloodDonateScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="RequestBlood"
+        component={RequestBloodScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="RequestDetails"
+        component={RequestDetailsScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="BloodDonateDetails"
+        component={BloodDonateDetailsScreen}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
+        name="ActivityDetails"
+        component={ActivityDetailsScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="BloodBankDetails"
         component={NotificationScreen}

@@ -3,7 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import StartupNavigator from './StartupNavigator';
 import AuthNavigator from './AuthNavigator';
-import ScreenNavigator from './ScreenNavigator';
+import DrawerNavigator from './DrawerNavigator';
 
 import {useAuth} from '../context/AuthContext';
 
@@ -34,7 +34,7 @@ const RootNavigator = () => {
       ) : (
         <Stack.Screen
           name="AppFlow"
-          component={ScreenNavigator}
+          component={DrawerNavigator}
         />
       )}
     </Stack.Navigator>

@@ -1,4 +1,5 @@
-﻿import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
+import {DrawerActions} from '@react-navigation/native';
 import {
   FlatList,
   Image,
@@ -13,6 +14,7 @@ import {
   View,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const RED = '#F0003C';
 const DARK_RED = '#D80032';
@@ -72,7 +74,7 @@ const HOME_IMAGES = {
 type HomeScreenProps = {
   navigation: {
     navigate: (screenName: string) => void;
-    openDrawer?: () => void;
+    dispatch: (action: ReturnType<typeof DrawerActions.openDrawer>) => void;
   };
 };
 
@@ -190,7 +192,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
           <TouchableOpacity
             activeOpacity={0.7}
             style={styles.headerIconButton}
-            onPress={() => navigation.openDrawer?.()}>
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
             <Image source={HOME_IMAGES.menu} resizeMode="contain" style={styles.menuImage} />
           </TouchableOpacity>
 
@@ -198,11 +200,10 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
             activeOpacity={0.75}
             style={styles.notificationButton}
             onPress={() => navigateTo('Notifications')}>
-            <Image
-              source={HOME_IMAGES.notification}
-              resizeMode="contain"
-              style={styles.notificationImage}
-            />
+            <Ionicons name="notifications-outline" size={25} color={RED} />
+            <View style={styles.notificationBadge}>
+              <Text style={styles.notificationBadgeText}>0</Text>
+            </View>
           </TouchableOpacity>
         </View>
 
@@ -315,8 +316,9 @@ const styles = StyleSheet.create({
   header: {height: 52, backgroundColor: RED, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 12},
   headerIconButton: {width: 40, height: 42, alignItems: 'flex-start', justifyContent: 'center'},
   menuImage: {width: 35, height: 35,tintColor: '#FFFFFF'},
-  notificationButton: {width: 34, height: 34, borderRadius: 17,  alignItems: 'center', justifyContent: 'center'},
-  notificationImage: {width: 34, height: 34},
+  notificationButton: {width: 38, height: 38, borderRadius: 19, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center'},
+  notificationBadge: {position: 'absolute', top: -2, right: -2, minWidth: 16, height: 16, paddingHorizontal: 3, borderRadius: 8, backgroundColor: RED, alignItems: 'center', justifyContent: 'center'},
+  notificationBadgeText: {color: '#FFFFFF', fontSize: 9, fontWeight: '700'},
   scrollContent: {paddingBottom: 24},
   bannerListContent: {paddingHorizontal: 12, paddingTop: 12},
   bannerSeparator: {width: 24},
