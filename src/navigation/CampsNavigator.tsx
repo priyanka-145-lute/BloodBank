@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import PastCampsScreen from '../screens/camps/PastCampsScreen';
 import UpcomingCampsScreen from '../screens/camps/UpcomingCampsScreen';
+import CampDetailsScreen from '../screens/camps/CampDetailsScreen';
 import CampsScreen from '../screens/tab/CampsScreen';
 import {CampsStackParamList} from './navigationTypes';
 
@@ -13,6 +14,7 @@ const CampsNavigator = () => (
     <Stack.Screen name="CampsMenu" component={CampsScreen} />
     <Stack.Screen name="PastCamps" component={PastCampsScreen} />
     <Stack.Screen name="UpcomingCamps" component={UpcomingCampsScreen} />
+    <Stack.Screen name="CampDetails" component={CampDetailsScreen} />
   </Stack.Navigator>
 );
 

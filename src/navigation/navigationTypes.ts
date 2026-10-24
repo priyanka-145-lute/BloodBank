@@ -21,6 +21,15 @@ export type CampsStackParamList = {
   CampsMenu: undefined;
   PastCamps: undefined;
   UpcomingCamps: undefined;
+  CampDetails: {
+    camp: {
+      title: string;
+      date: string;
+      location: string;
+      organizer: string;
+      image: string;
+    };
+  };
 };
 export type DonorsStackParamList = {
   DonorsMenu: undefined;

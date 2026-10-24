@@ -95,13 +95,7 @@ const PastCampsScreen = ({navigation}: any) => {
   };
 
   const handleCampPress = (camp: Camp) => {
-    console.log('Selected Camp:', camp);
-
-    /*
-    navigation.navigate('ActivityDetails', {
-      activity: camp,
-    });
-    */
+    navigation.navigate('CampDetails', {camp});
   };
 
   return (
